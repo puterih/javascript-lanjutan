@@ -128,6 +128,7 @@ let angka = [3, 1, 2];
 // reverse untuk balikkan isi array
 // console.log(angka.sort());
 // sort untuk mengurutkan
+// method sort() merupakan prototype dari object array
 
 
 
