@@ -15,12 +15,121 @@
 
 // execution phase yaitu mengeksekusi programnya perbaris dr atas ke bwh
 
+// contoh lain dari EXECUTION CONTEXT, HOISTING
+// var nama = 'Puteri';
+// var umur = 16;
 
-var nama = 'Puteri';
-var umur = 16;
+// console.log(sayHello());
 
-console.log(sayHello());
+// function sayHello() {
+//     return `Halo, nama saya ${nama}, saya ${umur} tahun.`;
+// // jika tidak ingin ada undefined, maka ganti console.log jadi return
+// }
 
-function sayHello() {
-    console.log(`Halo, nama saya ${this.nama}, saya ${this.umur} tahun.`);
+// function seolah" membuat lokal execution context
+// yang didalamnya sama terdapat creation dan execution phase
+// bedanya klo lokal exec context, selain bisa akses window, kita bisa akses ke argument yang bisa berisi apapun yg kita masukkan ke dlm parameter function
+// di dalamnya ada juga Hoisting
+// Bingung
+
+// contoh kasus 1
+// var nama = 'Puteri Husnul';
+// var username = '@putr.hsl';
+
+// function cetakURL() {
+
+//     var instagramURL = 'http://instagram.com/';
+//     return instagramURL + username;
+// }
+
+// console.log(cetakURL('@puterihusnul', '@hcqn'));
+// --
+
+
+
+
+
+// contoh kasus 2
+// function a() {
+//     console.log('ini a');
+
+//     function b() {
+//         console.log('ini b');
+
+//     function c() {
+//         console.log('ini c');
+//     }
+
+//     c();
+//     }
+
+//     b();
+// }
+
+// a();
+
+// Latihan Js visualize
+function satu() {
+    var nama = 'Puteri';
+    console.log(nama);
 }
+
+function dua() {
+    console.log(nama);
+}
+
+console.log(nama);
+var nama = 'Husnul';
+satu();
+dua('Khotimah');
+console.log(nama);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
