@@ -67,6 +67,9 @@
 // }
 
 // a();
+// ---
+
+
 
 // Latihan Js visualize
 function satu() {
