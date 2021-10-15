@@ -97,25 +97,35 @@
 
 // document.body.innerHTML = el;
 
-// ----not yet
+
 // 4. Nested
 // HTML Fragments Bersarang
 
-// const mhs = {
-//     nama: 'Puteri Husnul'
-//     semester: 5,
-//     mataPelajaran: [
-//         'Senibudaya',
-//         'sejarah',
-//         'bahasa indonesia'
-//     ]
-// };
+const mhs = {
+    nama: 'Puteri Husnul',
+    semester: 5,
+    mataPelajaran: [
+        'Senibudaya',
+        'sejarah',
+        'bahasa indonesia'
+    ]
+};
 
-// const el = `<div class="mhs">
-// <h2>${mhs.nama}</h2>
+function cetakMataPelajaran(mataPelajaran) {
+    return `
+    <ol>
+    ${mataPelajaran.map(mk => `<li>${mk}</li>`).join('')}
+    </ol> `;
+}
 
-// </div>`
-// document.body.innerHTML = el;
+const el = `<div class="mhs">
+<h2>${mhs.nama}</h2>
+<span class="semester">Semester: ${mhs.semester}</span>
+<h4>Mata Pelajaran :</h4>
+${cetakMataPelajaran(mhs.mataPelajaran)}
+</div>`;
+
+document.body.innerHTML = el;
 
 // lanjut besok
 
