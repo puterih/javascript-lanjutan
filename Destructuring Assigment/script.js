@@ -10,5 +10,9 @@
 // menggunakan Destructuring
 const perkenalan = ['halo', 'nama', 'saya', 'Puteri'];
 
-const [salam, satu, dua, nama] = perkenalan;
-console.log(dua);
+// const [salam, satu, dua, nama] = perkenalan;
+// console.log(dua);
+
+// Skipping Items ----
+const [salam, , , nama] = perkenalan;
+console.log(nama);
