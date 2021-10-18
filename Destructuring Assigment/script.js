@@ -39,12 +39,46 @@
 
 
 // Rest parameter
-const [a, ...values] = [1, 2, 3, 4, 5];
-console.log(a);
-// console.log(b);
+// const [a, ...values] = [1, 2, 3, 4, 5];
+// console.log(a);
+// console.log(values);
 
 
-// Lanjut
+
+// Destructuring Object
+const mhs = {
+    nama: 'Puteri',
+    umur: 16
+}
+
+const { nama, umur } = mhs;
+console.log(nama);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
