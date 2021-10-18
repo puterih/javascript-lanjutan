@@ -46,13 +46,75 @@
 
 
 // Destructuring Object
+// const mhs = {
+//     nama: 'Puteri',
+//     umur: 16
+// }
+
+// const { nama, umur } = mhs;
+// console.log(nama);
+
+
+
+// Assignment tanpa deklarasi object
+// // tanpa const, syarat: harus menggunakan () dahulu
+// ({ nama, umur } = { nama: 'Puteri', umur: 16 });
+// console.log(nama);
+
+
+
+
+// Assign ke variabel baru
+// const mhs = {
+//     nama: 'Puteri',
+//     umur: 16
+// }
+// const { nama: n, umur:u } = mhs;
+// console.log(u);
+
+
+
+// Memberikan Default Value
 const mhs = {
     nama: 'Puteri',
-    umur: 16
+    umur: 16,
+    email: 'husnulputeri@gmail.com'
 }
+const { nama, umur, email = 'email@default.com' } = mhs;
+console.log(email);
 
-const { nama, umur } = mhs;
-console.log(nama);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
