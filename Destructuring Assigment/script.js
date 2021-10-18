@@ -75,13 +75,81 @@
 
 
 // Memberikan Default Value
+// const mhs = {
+//     nama: 'Puteri',
+//     umur: 16,
+//     email: 'husnulputeri@gmail.com'
+// }
+// const { nama, umur, email = 'email@default.com' } = mhs;
+// console.log(email);
+
+
+
+// kita bisa memberi nilai default = assign ke variabel baru
+// const mhs = {
+//     nama: 'Puteri',
+//     umur: 16,
+//     email: 'husnulputeri@gmail.com'
+// }
+// const { nama: n, umur: u, email: e = 'email@default.com' } = mhs;
+// console.log(e);
+
+
+
+// Rest Parameter
+// const mhs = {
+//     nama: 'Puteri',
+//     umur: 16,
+//     email: 'husnulputeri@gmail.com'
+// }
+// const { nama, ...value } = mhs;
+// console.log(value);
+// // jika consol nama hasilnya string dan jika console value bentuknya object
+
+
+
+// ketika kita mau mengambil field pd object, setelah dikirim sebagai parameter untuk function
 const mhs = {
-    nama: 'Puteri',
-    umur: 16,
-    email: 'husnulputeri@gmail.com'
+    id: 123,
+        nama: 'Puteri',
+        umur: 16,
+        email: 'husnulputeri@gmail.com'
+    }
+
+function getIdMhs({ id }) {
+// bisa id saja, bisa tambah yg lain: nama -> return nama;
+    return id;
 }
-const { nama, umur, email = 'email@default.com' } = mhs;
-console.log(email);
+
+console.log(getIdMhs(mhs));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
