@@ -22,17 +22,68 @@
 
 
 
-// jika ingin urutannya tidak berpengaruh, return value bisa diganti jadi object
-function kalkulasi(a, b) {
-    return {
-        tambah: a + b,
-        kurang: a - b,
-        kali: a * b,
-        bagi: a / b
+// // jika ingin urutannya tidak berpengaruh, return value bisa diganti jadi object
+// function kalkulasi(a, b) {
+//     return {
+//         tambah: a + b,
+//         kurang: a - b,
+//         kali: a * b,
+//         bagi: a / b
+//     }
+// }
+// // object bisa di Distructuring menggunakan {}
+// // jadi urutannya bisa berurut, bisa acak karena sudah terasosiasi dengan nama propertinya, bukan lagi urutannya
+// const {bagi, kali, kurang, tambah} = kalkulasi(2, 3);
+// console.log(kurang);
+
+
+
+
+// Destruction function arguments
+const mhs1 = {
+    nama: 'Puteri Husnul',
+    umur: 16,
+    email: 'husnulputeri@gmail.com',
+// ada object di dalam object
+    nilai: {
+        tugas: 80,
+        uts: 85,
+        uas: 75
     }
 }
-// object bisa di Distructuring menggunakan {}
-// jadi urutannya bisa berurut, bisa acak karena sudah terasosiasi dengan nama propertinya, bukan lagi urutannya
-const {bagi, kali, kurang, tambah} = kalkulasi(2, 3);
-console.log(kurang);
+
+// cara destruction untuk mempermudah tulisan jika isinya kompleks
+function cetakMhs({ nama, umur, nilai: { tugas, uts, uas } }) {
+    return `Halo, nama saya ${nama}, dan saya ${umur} tahun, dan nilai uas saya adalah ${uas}.`;
+}
+
+console.log(cetakMhs(mhs1));
+
+
+// // cara lain 1
+// function cetakMhs(nama, umur) {
+//     return `Halo, nama saya ${nama}, dan saya ${umur} tahun.`;
+// }
+
+// console.log(cetakMhs(mhs1.nama, mhs1.umur));
+
+
+// // cara lain 2
+// function cetakMhs(mhs) {
+//     return `Halo, nama saya ${mhs.nama}, dan saya ${mhs.umur} tahun.`;
+// }
+
+// console.log(cetakMhs(mhs1));
+
+
+
+
+
+
+
+
+
+
+
+
 
