@@ -34,10 +34,54 @@ const mhs = ['Puteri', 'Husnul', 'Khotimah'];
 // for(const m of mhs.entries()) {
 //     console.log(m);
 // }
-// cara 2
-for(const [i, m] of mhs.entries()) {
-    console.log(`${m} adalah mahasiswa ke-${i + 1}`);
+// // cara 2
+// for(const [i, m] of mhs.entries()) {
+//     console.log(`${m} adalah mahasiswa ke-${i + 1}`);
+// }
+
+
+
+
+// NodeList, yaitu ketika kita melakukan query pada DOM
+const liNama = document.querySelectorAll('.nama');
+// console.log(linama);
+
+// liNama.forEach(n => console.log(n.textContent));
+// // bisa menggunakan innerHTML/text.Content
+
+for( n of liNama) {
+    console.log(n.innerHTML);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
