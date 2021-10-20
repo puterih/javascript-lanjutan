@@ -10,12 +10,24 @@
 // mhs.forEach( m => console.log(m));
 // --
 // 3. mengguanakan for..of
-for( const m of mhs ) {
-    console.log(m);
-}
+// for( const m of mhs ) {
+//     console.log(m);
+// }
 // --
 
+// Menggunakan String
+// // forEach tidak bisa digunakan untuk looping string karna dia bukan Array(forEach khusus untuk array)
+// const nama = 'Puteri';
+// for(const n of nama) {
+//     console.log(n);
+// }
 
+const mhs = ['Puteri', 'Husnul', 'Khotimah'];
+mhs.forEach((m, i) => {
+    // console.log(m);
+    // console.log(i);
+    console.log(`${m} adalah mahasiswa ke-${i + 1}`);
+});
 
 
 
