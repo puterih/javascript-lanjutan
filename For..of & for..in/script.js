@@ -23,12 +23,21 @@
 // }
 
 const mhs = ['Puteri', 'Husnul', 'Khotimah'];
-mhs.forEach((m, i) => {
-    // console.log(m);
-    // console.log(i);
-    console.log(`${m} adalah mahasiswa ke-${i + 1}`);
-});
+// mhs.forEach((m, i) => {
+//     // console.log(m);
+//     // console.log(i);
+//     console.log(`${m} adalah mahasiswa ke-${i + 1}`);
+// });
 
+// jika ingin menggunakan for..of maka pakai method entries()
+// // cara 1
+// for(const m of mhs.entries()) {
+//     console.log(m);
+// }
+// cara 2
+for(const [i, m] of mhs.entries()) {
+    console.log(`${m} adalah mahasiswa ke-${i + 1}`);
+}
 
 
 
