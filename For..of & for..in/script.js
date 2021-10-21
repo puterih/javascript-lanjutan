@@ -43,15 +43,72 @@ const mhs = ['Puteri', 'Husnul', 'Khotimah'];
 
 
 // NodeList, yaitu ketika kita melakukan query pada DOM
-const liNama = document.querySelectorAll('.nama');
+// const liNama = document.querySelectorAll('.nama');
 // console.log(linama);
 
 // liNama.forEach(n => console.log(n.textContent));
 // // bisa menggunakan innerHTML/text.Content
 
-for( n of liNama) {
-    console.log(n.innerHTML);
+// for( n of liNama) {
+//     console.log(n.innerHTML);
+// }
+
+
+
+// arguments *yg ada pd sebuah function
+
+
+function jumlahkanAngka() {
+    // return [1,2,3,4,5].reduce((a, i) => a + i);
+// pakai array bisa, tapi pakai arguments tidak bisa
+    // return arguments.reduce((a, i) => a + i);
+    // arguments.forEach(a => jumlah += a);
+    let jumlah = 0;
+    for (a of arguments) {
+        jumlah += a;
+    }
+    return jumlah;
 }
+
+console.log(jumlahkanAngka(1,2,3,4,5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
