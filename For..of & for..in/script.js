@@ -22,7 +22,7 @@
 //     console.log(n);
 // }
 
-const mhs = ['Puteri', 'Husnul', 'Khotimah'];
+// const mhs = ['Puteri', 'Husnul', 'Khotimah'];
 // mhs.forEach((m, i) => {
 //     // console.log(m);
 //     // console.log(i);
@@ -58,19 +58,64 @@ const mhs = ['Puteri', 'Husnul', 'Khotimah'];
 // arguments *yg ada pd sebuah function
 
 
-function jumlahkanAngka() {
-    // return [1,2,3,4,5].reduce((a, i) => a + i);
-// pakai array bisa, tapi pakai arguments tidak bisa
-    // return arguments.reduce((a, i) => a + i);
-    // arguments.forEach(a => jumlah += a);
-    let jumlah = 0;
-    for (a of arguments) {
-        jumlah += a;
-    }
-    return jumlah;
+// function jumlahkanAngka() {
+//     // return [1,2,3,4,5].reduce((a, i) => a + i);
+// // pakai array bisa, tapi pakai arguments tidak bisa
+//     // return arguments.reduce((a, i) => a + i);
+//     // arguments.forEach(a => jumlah += a);
+//     let jumlah = 0;
+//     for (a of arguments) {
+//         jumlah += a;
+//     }
+//     return jumlah;
+// }
+
+// console.log(jumlahkanAngka(1,2,3,4,5));
+
+
+// for..in
+const mhs = {
+    nama: 'puteri',
+    umur: 33,
+    email: 'husnulputeri@gmail.com'
 }
 
-console.log(jumlahkanAngka(1,2,3,4,5));
+for (m in mhs) {
+    console.log(mhs[m]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
