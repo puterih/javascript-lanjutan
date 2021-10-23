@@ -21,7 +21,7 @@
 // for(const n of nama) {
 //     console.log(n);
 // }
-
+-
 // const mhs = ['Puteri', 'Husnul', 'Khotimah'];
 // mhs.forEach((m, i) => {
 //     // console.log(m);
