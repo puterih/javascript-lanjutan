@@ -32,16 +32,23 @@
 
 
 // Cara ingin mengambil nama pakai Js lalu disimpan ke Array
-const liMhs = document.querySelectorAll('li');
-// const mhs = [];
-// // cara looping biasa
-// for (let i = 0; i < liMhs.length; i++) {
-//     mhs.push(liMhs[i].textContent);
-// }
+// const liMhs = document.querySelectorAll('li');
+// // const mhs = [];
+// // // cara looping biasa
+// // for (let i = 0; i < liMhs.length; i++) {
+// //     mhs.push(liMhs[i].textContent);
+// // }
+// // console.log(mhs);
+// // cara singkat
+// const mhs = [...liMhs].map(m => m.textContent);
 // console.log(mhs);
-// cara singkat
-const mhs = [...liMhs].map(m => m.textContent);
-console.log(mhs);
+
+
+// ----
+const nama = document.querySelector('.nama');
+const huruf = [...nama.textContent].map(h => `<span>${h}</span>`).join('')`);
+nama.innerHTML = huruf;
+// belum paham, lnjut besok
 
 
 
