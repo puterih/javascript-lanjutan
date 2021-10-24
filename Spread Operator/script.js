@@ -21,12 +21,86 @@
 
 
 // meng-copy array
-const mhs = ['Puteri', 'Husnul', 'Khotimah'];
-// const mhs1 = mhs;
-const mhs1 = [...mhs];
-mhs1[0] ='Hace';
+// const mhs = ['Puteri', 'Husnul', 'Khotimah'];
+// // const mhs1 = mhs;
+// const mhs1 = [...mhs];
+// mhs1[0] ='Hace';
+// // console.log(mhs);
+// console.log(mhs1);
+
+
+
+
+// Cara ingin mengambil nama pakai Js lalu disimpan ke Array
+const liMhs = document.querySelectorAll('li');
+// const mhs = [];
+// // cara looping biasa
+// for (let i = 0; i < liMhs.length; i++) {
+//     mhs.push(liMhs[i].textContent);
+// }
 // console.log(mhs);
-console.log(mhs1);
+// cara singkat
+const mhs = [...liMhs].map(m => m.textContent);
+console.log(mhs);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
