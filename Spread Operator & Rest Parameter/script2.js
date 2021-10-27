@@ -33,20 +33,26 @@
 
 
 // Cara 1: Penjumlahan parameter menggunakan for..of
+// function jumlahkan(...angka) {
+//     let total = 0;
+// // menggunakan let karna akan akan dimasukkan ke dalam Looping
+//     for(const a of angka) {
+//         total += a;
+//     }
+
+//     return total;
+
+// }
+
+// console.log(jumlahkan(1,2,3,4,5));
+
+
+// Cara 2: Penjumlahan parameter secara ringkas pakai higher order function reduce
 function jumlahkan(...angka) {
-    let total = 0;
-// menggunakan let karna akan akan dimasukkan ke dalam Looping
-    for(const a of angka) {
-        total += a;
-    }
-
-    return total;
-
+    return angka.reduce((a, b) => a + b);
 }
 
 console.log(jumlahkan(1,2,3,4,5));
-
-
 
 
 
