@@ -63,21 +63,29 @@
 
 
 
-// Object Destructuring
-const team = {
-    pm: 'Puteri',
-    frontEnd1: 'Husnul',
-    frontEnd2: 'Khotimah',
-    backEnd: 'Hc',
-    ux: 'Queen',
-    devOps: 'Mlbb'
+// // Object Destructuring
+// const team = {
+//     pm: 'Puteri',
+//     frontEnd1: 'Husnul',
+//     frontEnd2: 'Khotimah',
+//     backEnd: 'Hc',
+//     ux: 'Queen',
+//     devOps: 'Mlbb'
+// }
+
+// const { pm, ...myTeam } = team;
+// console.log(myTeam);
+
+
+
+// Filter
+function filterBy(type, ...values) {
+    return values.filter(v => typeof v ===type);
 }
 
-const { pm, ...myTeam } = team;
-console.log(myTeam);
-
-
-
+// console.log(filterBy('number', 1, 2, 'Puteri', false, 10, true, 'hc'));
+// console.log(filterBy('string', 1, 2, 'Puteri', false, 10, true, 'hc'));
+console.log(filterBy('boolean', 1, 2, 'Puteri', false, 10, true, 'hc'));
 
 
 
