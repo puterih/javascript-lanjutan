@@ -48,18 +48,33 @@
 
 
 // Cara 2: Penjumlahan parameter secara ringkas pakai higher order function reduce
-function jumlahkan(...angka) {
-    return angka.reduce((a, b) => a + b);
+// function jumlahkan(...angka) {
+//     return angka.reduce((a, b) => a + b);
+// }
+
+// console.log(jumlahkan(1,2,3,4,5));
+
+
+
+// // Array Destructuring
+// const kelompok1 = ['Puteri', 'Husnul', 'Khotimah', 'Hc', 'Queen'];
+// const [ketua, wakil, ...anggota] = kelompok1;
+// console.log(kelompok1);
+
+
+
+// Object Destructuring
+const team = {
+    pm: 'Puteri',
+    frontEnd1: 'Husnul',
+    frontEnd2: 'Khotimah',
+    backEnd: 'Hc',
+    ux: 'Queen',
+    devOps: 'Mlbb'
 }
 
-console.log(jumlahkan(1,2,3,4,5));
-
-
-
-
-
-
-
+const { pm, ...myTeam } = team;
+console.log(myTeam);
 
 
 
