@@ -16,7 +16,7 @@
 //     }
     
 // console.log(myFunc(1,2,3,4,5));
-// // Rest(sisa)...myArgs parameter hanya bisa digunakan di akhir dari argument
+// Rest(sisa)...myArgs parameter hanya bisa digunakan di akhir dari argument
 
 
 // Cara 3
@@ -48,11 +48,11 @@
 
 
 // Cara 2: Penjumlahan parameter secara ringkas pakai higher order function reduce
-// function jumlahkan(...angka) {
-//     return angka.reduce((a, b) => a + b);
-// }
+function jumlahkan(...angka) {
+    return angka.reduce((a, b) => a + b);
+}
 
-// console.log(jumlahkan(1,2,3,4,5));
+console.log(jumlahkan(1,2,3,4,5));
 
 
 

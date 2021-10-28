@@ -1,0 +1,23 @@
+[
+    {
+        "nama": "Puteri Husnul",
+        "nrp": "043040023",
+        "email": "husnulputeri@gmail.com",
+        "jurusan": "Teknik Informatika",
+        "idDosenWali": 1
+    },
+    {
+        "nama": "Erza Fadliyah",
+        "nrp": "034504023",
+        "email": "erza@gmail.com",
+        "jurusan": "Teknik Mesin",
+        "idDosenWali": 2
+    },
+    {
+        "nama": "Hannah salsabilah",
+        "nrp": "752446346",
+        "email": "hannah@gmail.com",
+        "jurusan": "KeDokteran",
+        "idDosenWali": 2
+    }
+];
