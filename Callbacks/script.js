@@ -35,31 +35,36 @@ const mhs = [
         "idDosenWali": 2
     }
 ];
-console.log('mulai');
-mhs.forEach(m => {
-    for (let i = 0; i < 10000000; i++) {
-        let date = new Date();
-    }
-    console.log(m.nama)});
-console.log('selesai');
+// console.log('mulai');
+// mhs.forEach(m => {
+//     for (let i = 0; i < 10000000; i++) {
+//         let date = new Date();
+//     }
+//     console.log(m.nama)});
+// console.log('selesai');
 
 
 // Asynchronous Callback
-// function getDataMahasiswa(url, success, error) {
-//     let xhr = new XMLHttpRequest;
+function getDataMahasiswa(url, success, error) {
+    let xhr = new XMLHttpRequest();
 
-//     xhr.onreadystatechange = function() {
-//         if( xhr.readyState === 4 ) {
-//             if (xhr.status === 200) {
-//                 success(xhr.response);
-//             } else if( xhr.status = 404) {
-//                 error();
-//             }
-//         }
-//     }
+    xhr.onreadystatechange = function() {
+        if( xhr.readyState === 4 ) {
+            if(xhr.status === 200) {
+                success(xhr.response);
+            } else if( xhr.status === 404 ) {
+                error();
+            }
+        }
+    }
 
-//     xhr.open('get', url);
-//     xhr.semd();
-// }
+    xhr.open('get', url);
+    xhr.send();
+}
 
-// getDataMahasiswa('data');
+getDataMahasiswa('data/mahasiswa.json', result => {
+    console.log(result);
+}, () => {
+
+});
+// not yet
