@@ -102,3 +102,8 @@ console.log(filterBy('boolean', 1, 2, 'Puteri', false, 10, true, 'hc'));
 
 
 
+
+
+
+
+
